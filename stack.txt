@@ -1,0 +1,29 @@
+stack adt -> features / operation
+
+stack adt j
+ stack of dinner plates
+ stacks of ball in 
+
+ stack is collection of this item that the item is inserted or romoved in the smae place
+
+ last in first out (lifo)
+ 
+
+ insertion have push (x)
+ 
+ for removing for last character
+ is pop()
+ top() return the value top of the  stack and there can be an operation whether the stack is empty or not
+ isempty();
+
+
+ these all are done in costant time 
+ time complexity is  bigO( 1)
+
+
+Application of stack 
+--function call / recursion
+-- undo in an editor
+-- Balanced Parentheses
+--
+ 
