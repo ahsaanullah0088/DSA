@@ -26,6 +26,14 @@ void inorder(struct Node* root) {
     cout<<root->data<<"";
     inorder(root->right);
 }
+void postorder(struct Node* root) {
+    if(root == NULL) {
+        return;
+    }
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->data<<"";
+}
 int main()
 {
         struct Node* root = new Node(1);
@@ -43,4 +51,5 @@ int main()
 
     // preorder(root);
     //inorder(root);
+    postorder(root);
 }
