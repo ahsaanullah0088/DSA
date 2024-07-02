@@ -19,7 +19,18 @@ int calHeight(Node*root){
     return max(lheight,rheight)+1;
 
 }
-int calcDiameter
+int calcDiameter(Node*root){
+    if(root==NULL){
+        return 0;
+    }
+    int lheight = calHeight(root->left);
+    int rheight = calHeight(root->right);
+    int currDiameter = lheight+rheight+1;
+    int lDiameter = calcDiameter(root->left);
+    int rDiameter = calcDiameter(root->right);
+    return max(currDiameter,max(lDiameter,rDiameter));
+
+}
 
 int main(){
     struct Node* root = new Node(1);
@@ -30,4 +41,6 @@ int main(){
     root->right->left = new Node(6);
     root->right->right = new Node(7);
     cout<<calHeight(root);
+    cout<<endl;
+    cout<<calcDiameter(root);
     return 0;}
