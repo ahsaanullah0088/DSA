@@ -54,3 +54,4 @@ int main(){
     // cout<<linearSearch(array,n,key)<<endl;
 
 }
+// Time complexity of binary search is O(logn) and linear search is O(n)
